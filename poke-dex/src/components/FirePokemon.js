@@ -13,33 +13,47 @@ const FirePokemon = () => {
     }
     getData()
   }, [])
-  
+
   console.log('Data>>>', data)
 
   return (
-    <>
-    <div>
-      {data?.data.map(info => {
-        return (
-          <>
-          <p>{info.data}</p>
-          <p>{info.name}</p>
-          <p>{info.types.map(i =>{
-            return(
-              <p>{i}</p>
-            )
-            })
-          }
-          </p>
-          </>
-        )
-        })}
+
+    <div className='home-page'>
+      <h1>Home Page</h1>
+      <div className='card-holder'>
+        <div className='pokemon-card'>
+          <div className='pokemon-img'></div>
+          <div className='attributes'>
+              <div className='stats'>
+                {data?.data.map(info => {
+                  return (
+                    <>
+                      <p>{info.data}</p>
+                      <p>{info.name}</p>
+                      <p>{info.types.map(i => {
+                        return (
+                          <p>{i}</p>
+                        )
+                      })
+                      }
+                      </p>
+                      <p>{info.description}</p>
+                    </>
+                  )
+                })}
+              </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
-    </>
-    )
+
+  )
 
 }
 
 
 
 export default FirePokemon
+
