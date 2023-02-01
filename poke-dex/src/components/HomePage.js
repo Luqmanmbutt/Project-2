@@ -7,8 +7,8 @@ const HomePage = () => {
 
   return (
     <>
-      <WaterPokemon />
       <FirePokemon />
+      <WaterPokemon />
       <GrassPokemon />
     </>
   )

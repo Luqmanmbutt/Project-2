@@ -8,7 +8,7 @@ const FirePokemon = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const response = await axios.get("https://pokeapi.glitch.me/v1/pokemon/1")
+      const response = await axios.get("https://pokeapi.glitch.me/v1/pokemon/4")
       setData(response)
     }
     getData()
@@ -21,7 +21,7 @@ const FirePokemon = () => {
       <h1>Fire Pokemon</h1>
         <div className='card-holder'>
           <div className='pokemon-card'>
-            <div className='pokemon-img'>
+            <div className='fire-pokemon-img'>
             </div>
             <div className='attributes'>
             <div className='stats'>

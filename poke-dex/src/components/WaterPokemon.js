@@ -9,7 +9,7 @@ const WaterPokemon = () => {
   
     useEffect(() => {
       const getData = async () => {
-        const response = await axios.get("https://pokeapi.glitch.me/v1/pokemon/2")
+        const response = await axios.get("https://pokeapi.glitch.me/v1/pokemon/7")
         setData(response)
       }
       getData()
@@ -21,7 +21,7 @@ const WaterPokemon = () => {
           <h1>Water Pokemon</h1>
           <div className='card-holder'>
             <div className='pokemon-card'>
-              <div className='pokemon-img'></div>
+              <div className='water-pokemon-img'></div>
               <div className='attributes'>
                 <div className='stats'>
                   {data?.data.map(info => {

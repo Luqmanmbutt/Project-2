@@ -9,7 +9,7 @@ const GrassPokemon = () => {
   
     useEffect(() => {
       const getData = async () => {
-        const response = await axios.get("https://pokeapi.glitch.me/v1/pokemon/3")
+        const response = await axios.get("https://pokeapi.glitch.me/v1/pokemon/252")
         setData(response)
       }
       getData()
@@ -21,7 +21,7 @@ const GrassPokemon = () => {
           <h1>Grass Pokemon</h1>
           <div className='card-holder'>
             <div className='pokemon-card'>
-              <div className='pokemon-img'></div>
+              <div className='grass-pokemon-img'></div>
               <div className='attributes'>
                 <div className='stats'>
                   {data?.data.map(info => {
