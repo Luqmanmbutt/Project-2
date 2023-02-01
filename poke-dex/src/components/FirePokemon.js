@@ -22,7 +22,6 @@ const FirePokemon = () => {
         <div className='card-holder'>
           <div className='pokemon-card'>
             <div className='pokemon-img'>
-              <img />
             </div>
             <div className='attributes'>
             <div className='stats'>

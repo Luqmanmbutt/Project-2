@@ -11,3 +11,8 @@
     border: 1px solid black;
 
 }
+.pokemon-img {
+    height: 20px;
+    width: 50px;
+    background: url("../src/assets/charmander.png")
+}
