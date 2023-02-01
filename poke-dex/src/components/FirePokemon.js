@@ -17,31 +17,31 @@ const FirePokemon = () => {
   console.log('Data>>>', data)
 
   return (
-
+      
     <div className='home-page'>
-      <h1>Home Page</h1>
+      <h1>Fire Pokemon</h1>
       <div className='card-holder'>
         <div className='pokemon-card'>
           <div className='pokemon-img'></div>
           <div className='attributes'>
-              <div className='stats'>
-                {data?.data.map(info => {
-                  return (
-                    <>
-                      <p>{info.data}</p>
-                      <p>{info.name}</p>
-                      <p>{info.types.map(i => {
-                        return (
-                          <p>{i}</p>
-                        )
-                      })
-                      }
-                      </p>
-                      <p>{info.description}</p>
-                    </>
-                  )
-                })}
-              </div>
+            <div className='stats'>
+              {data?.data.map(info => {
+                return (
+                  <>
+                    <p>{info.data}</p>
+                    <p>{info.name}</p>
+                    <p>{info.types.map(i => {
+                      return (
+                        <p>{i}</p>
+                      )
+                    })
+                    }
+                    </p>
+                    <p>{info.description}</p>
+                  </>
+                )
+              })}
+            </div>
           </div>
         </div>
 
