@@ -14,43 +14,47 @@ const FirePokemon = () => {
     getData()
   }, [])
 
-  console.log('Data>>>', data)
 
   return (
-      
-    <div className='home-page'>
+
+    <div className='card-container'>
       <h1>Fire Pokemon</h1>
-      <div className='card-holder'>
-        <div className='pokemon-card'>
-          <div className='pokemon-img'></div>
-          <div className='attributes'>
+        <div className='card-holder'>
+          <div className='pokemon-card'>
+            <div className='pokemon-img'>
+              <img />
+            </div>
+            <div className='attributes'>
             <div className='stats'>
               {data?.data.map(info => {
                 return (
                   <>
-                    <p>{info.data}</p>
-                    <p>{info.name}</p>
-                    <p>{info.types.map(i => {
+                    <p key={info.data}>
+                      {info.data}
+                    </p>
+                    <p key={info.name}>
+                      {info.name}
+                    </p>
+                    <p key={info.types}>
+                      {info.types.map(i => {
                       return (
-                        <p>{i}</p>
+                        <p key={i}>{i}</p>
                       )
                     })
                     }
                     </p>
-                    <p>{info.description}</p>
+                    <p key={info.description}>
+                      {info.description}
+                    </p>
                   </>
                 )
               })}
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
-
   )
-
 }
 
 

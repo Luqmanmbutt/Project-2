@@ -1,15 +1,12 @@
 import './App.css';
-import FirePokemon from './components/FirePokemon';
-import WaterPokemon from './components/WaterPokemon';
-import GrassPokemon from './components/GrassPokemon';
+import HomePage from './components/HomePage'
 
 function App() {
   return (
     <>
-      <FirePokemon />
-      <WaterPokemon />
-      <GrassPokemon />
-      <h1></h1>
+      <div className='home-page'>
+        <HomePage />
+      </div>
     </>
     );
   }
