@@ -12,7 +12,7 @@ const FirePokemon = () => {
       const response = await axios.get(`https://pokeapi.glitch.me/v1/pokemon/${pokemon}`)
       setData(response)
     }
-    // getData()
+    getData()
   }, [])
 console.log('data>.', data)
   
@@ -24,19 +24,16 @@ console.log('data>.', data)
   }
 
 
-  const prevGen = () => {
+  // const prevGen = () => {
 
-    console.log('GEN DOWN')
-  }
+  //   console.log('GEN DOWN')
+  // }
 
   return (
       <div className='card-container'>
-        <button onClick={nextGen}>
-          Gen Up !
-        </button>
-        <button onClick={prevGen}>
-          Gen Down !
-        </button>
+        <button className='genup' onClick={nextGen}></button>
+        <button className='genup' onClick={nextGen}> </button>
+        <button className='genup' onClick={nextGen}></button>
       <div className='card-holder'></div>
       <div className='pokemon-card'></div>
       <div className='fire-pokemon-img'></div>
