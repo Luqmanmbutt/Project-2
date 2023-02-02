@@ -13,7 +13,7 @@ const WaterPokemon = () => {
       const response = await axios.get(`https://pokeapi.glitch.me/v1/pokemon/${pokemon}`)
       setData(response)
     }
-    getData()
+    // getData()
   }, [])
 
     return (

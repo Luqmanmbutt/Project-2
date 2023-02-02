@@ -4,21 +4,39 @@ import axios from 'axios'
 
 const FirePokemon = () => {
 
-  const pokemon = 'charmander'
-  const [data, setData] = useState(null)
+  let pokemon = 'charmander'
+  const [data, setData] = useState(null) 
 
   useEffect(() => {
     const getData = async () => {
       const response = await axios.get(`https://pokeapi.glitch.me/v1/pokemon/${pokemon}`)
       setData(response)
     }
-    getData()
+    // getData()
   }, [])
 console.log('data>.', data)
+  
+  const nextGen = () => {
+    pokemon = 'charmeleon'
+    console.log('pokemon>', pokemon)
+    console.log('data next gen>.', data)
+
+  }
+
+
+  const prevGen = () => {
+
+    console.log('GEN DOWN')
+  }
 
   return (
-
-    <div className='card-container'>
+      <div className='card-container'>
+        <button onClick={nextGen}>
+          Gen Up !
+        </button>
+        <button onClick={prevGen}>
+          Gen Down !
+        </button>
       <div className='card-holder'></div>
       <div className='pokemon-card'></div>
       <div className='fire-pokemon-img'></div>
@@ -27,7 +45,8 @@ console.log('data>.', data)
        {data?.data.map(info => {
           return (
             <>
-              <p key={info.data}>
+              <p
+               key={info.data}>
                 {info.data}
               </p>
               <p key={info.name}>
@@ -56,27 +75,3 @@ console.log('data>.', data)
 
 
 export default FirePokemon
-
-// {data?.data.map(info => {
-//   return (
-//     <>
-//       <p key={info.data}>
-//         {info.data}
-//       </p>
-//       <p key={info.name}>
-//         {info.name}
-//       </p>
-//       <p key={info.types}>
-//         {info.types.map(i => {
-//         return (
-//           <p key={i}>{i}</p>
-//         )
-//       })
-//       }
-//       </p>
-//       <p key={info.description}>
-//         {info.description}
-//       </p>
-//     </>
-//   )
-// })}
