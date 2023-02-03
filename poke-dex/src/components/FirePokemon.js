@@ -4,39 +4,57 @@ import axios from 'axios'
 
 const FirePokemon = () => {
 
+  
   let pokemon = 'charmander'
-  const [data, setData] = useState(null) 
+  const [data, setData] = useState(null)
+  const [evolution, setEvolution] = useState('fire-pokemon-img-1')
+   
+
+
+  const getData = async () => {
+    const response = await axios.get(`https://pokeapi.glitch.me/v1/pokemon/${pokemon}`)
+    setData(response)
+  }
 
   useEffect(() => {
-    const getData = async () => {
-      const response = await axios.get(`https://pokeapi.glitch.me/v1/pokemon/${pokemon}`)
-      setData(response)
-    }
-    getData()
+
+    // getData()
   }, [])
-console.log('data>.', data)
+
+    console.log('data>.', data)
   
-  const nextGen = () => {
-    pokemon = 'charmeleon'
+  const evoOne = () => {
+    pokemon = 'charmander'
+    // getData()
+    setEvolution('fire-pokemon-img-1')
     console.log('pokemon>', pokemon)
     console.log('data next gen>.', data)
-
+  }
+ 
+  const evoTwo = () => {
+    pokemon = 'charmeleon'
+    // getData()
+    setEvolution('fire-pokemon-img-2')
+    console.log('pokemon>', pokemon)
+    console.log('data next gen>.', data)
+  }
+  const evoThree = () => {
+    pokemon = 'charizard'
+    // getData()
+    setEvolution('fire-pokemon-img-3')
+    console.log('pokemon>', pokemon)
+    console.log('data next gen>.', data)
   }
  
 
-  // const prevGen = () => {
-
-  //   console.log('GEN DOWN')
-  // }
-
   return (
       <div className='card-container'>
-        <button className='pokeball' onClick={nextGen}></button>
-        <button className='greatball' onClick={nextGen}> </button>
-        <button className='ultraball' onClick={nextGen}></button>
+        <button className='pokeball' onClick={evoOne}></button>
+        <button className='greatball' onClick={evoTwo}> </button>
+        <button className='ultraball' onClick={evoThree}></button>
       <div className='card-holder'></div>
       <div className='pokemon-card'></div>
-      <div className='fire-pokemon-img'></div>
+      <div className={evolution}></div>
       <div className='attributes'></div>
       <div className='stats'>
        {data?.data.map(info => {

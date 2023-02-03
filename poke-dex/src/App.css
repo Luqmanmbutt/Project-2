@@ -17,11 +17,94 @@
     background: url("../src/assets/back-ground.png");
     background-repeat: no-repeat;
     background-size: 1629px;
-
-   
 }
 
-.pokeball {
+.card-container {
+    width: 23%; 
+}
+
+.fire-pokemon-img-1 {
+    width: 90%;
+    height: 200px;
+    background: url("../src/assets/charmander.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    mix-blend-mode: multiply;
+}
+.fire-pokemon-img-2 {
+    width: 90%;
+    height: 200px;
+    background: url("../src/assets/charmeleon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    mix-blend-mode: multiply;
+}
+.fire-pokemon-img-3 {
+    width: 90%;
+    height: 200px;
+    background: url("../src/assets/charizard.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    mix-blend-mode: multiply;
+}
+.water-pokemon-img-1 {
+    width: 90%;
+    height: 200px;
+    background: url("../src/assets/s.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    mix-blend-mode: multiply;
+}
+.water-pokemon-img-2 {
+    width: 90%;
+    height: 200px;
+    background: url("../src/assets/wt.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    mix-blend-mode: multiply;
+}
+.water-pokemon-img-3 {
+    width: 90%;
+    height: 200px;
+    background: url("../src/assets/b.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    mix-blend-mode: multiply;
+}
+.grass-pokemon-img-1 {
+    width: 90%;
+    height: 200px;
+    background: url("../src/assets/bulbs.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    mix-blend-mode: multiply;
+}
+.grass-pokemon-img-2 {
+    width: 90%;
+    height: 200px;
+    background: url("../src/assets/iyvs.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    mix-blend-mode: multiply;
+}
+.grass-pokemon-img-3 {
+    width: 90%;
+    height: 200px;
+    background: url("../src/assets/ven.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    mix-blend-mode: multiply;
+}
+.pokeball  {
     height: 85px;
     padding-left: 89.5px;
     padding-right: 19px;
@@ -29,7 +112,70 @@
     background:url("../src/assets/pokeball.png") no-repeat 10px center;
     background-size: 85px;
     cursor: pointer
+    
 }
+.pokeball:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    height: 85px;
+    padding-left: 89.5px;
+    padding-right: 19px;
+    border: 1px solid #000000;
+    background:url("../src/assets/pokeball.png") no-repeat 10px center;
+    background-size: 85px;
+    cursor: pointer
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  .greatball:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    height: 85px;
+    padding-left: 89.5px;
+    padding-right: 19px;
+    border: 1px solid #000000;
+    background:url("../src/assets/greatball.png") no-repeat 10px center;
+    background-size: 85px;
+    cursor: pointer
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
 .greatball {
     height: 85px;
     padding-left: 89.5px;
@@ -39,6 +185,37 @@
     background-size: 85px;
     cursor: pointer
 }
+.ultraball:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    height: 85px;
+    padding-left: 89.5px;
+    padding-right: 19px;
+    /* border: 1px solid #000000; */
+    background:url("../src/assets/ultraball.png") no-repeat 10px center;
+    background-size: 85px;
+    cursor: pointer
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
 .ultraball {
     height: 85px;
     padding-left: 89.5px;
@@ -47,36 +224,4 @@
     background:url("../src/assets/ultraball.png") no-repeat 10px center;
     background-size: 85px;
     cursor: pointer
-}
-
-.card-container {
-    width: 23%; 
-}
-
-.fire-pokemon-img {
-    width: 90%;
-    height: 200px;
-    background: url("../src/assets/charmander.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: 1px solid black;
-    mix-blend-mode: multiply;
-}
-.water-pokemon-img {
-    width: 90%;
-    height: 200px;
-    background: url("../src/assets/s.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: 1px solid black;
-    mix-blend-mode: multiply;
-}
-.grass-pokemon-img {
-    width: 90%;
-    height: 200px;
-    background: url("../src/assets/bulbs.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: 1px solid black;
-    mix-blend-mode: multiply;
 }
