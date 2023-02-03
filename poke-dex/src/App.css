@@ -21,12 +21,30 @@
    
 }
 
-.genup {
+.pokeball {
     height: 85px;
     padding-left: 89.5px;
     padding-right: 19px;
     border: 1px solid #000000;
     background:url("../src/assets/pokeball.png") no-repeat 10px center;
+    background-size: 85px;
+    cursor: pointer
+}
+.greatball {
+    height: 85px;
+    padding-left: 89.5px;
+    padding-right: 19px;
+    border: 1px solid #000000;
+    background:url("../src/assets/greatball.png") no-repeat 10px center;
+    background-size: 85px;
+    cursor: pointer
+}
+.ultraball {
+    height: 85px;
+    padding-left: 89.5px;
+    padding-right: 19px;
+    border: 1px solid #000000;
+    background:url("../src/assets/ultraball.png") no-repeat 10px center;
     background-size: 85px;
     cursor: pointer
 }

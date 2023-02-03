@@ -22,7 +22,7 @@ console.log('data>.', data)
     console.log('data next gen>.', data)
 
   }
-
+ 
 
   // const prevGen = () => {
 
@@ -31,9 +31,9 @@ console.log('data>.', data)
 
   return (
       <div className='card-container'>
-        <button className='genup' onClick={nextGen}></button>
-        <button className='genup' onClick={nextGen}> </button>
-        <button className='genup' onClick={nextGen}></button>
+        <button className='pokeball' onClick={nextGen}></button>
+        <button className='greatball' onClick={nextGen}> </button>
+        <button className='ultraball' onClick={nextGen}></button>
       <div className='card-holder'></div>
       <div className='pokemon-card'></div>
       <div className='fire-pokemon-img'></div>
