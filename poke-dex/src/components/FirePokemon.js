@@ -18,14 +18,14 @@ const FirePokemon = () => {
 
   useEffect(() => {
 
-    // getData()
+    getData()
   }, [])
 
     console.log('data>.', data)
   
   const evoOne = () => {
     pokemon = 'charmander'
-    // getData()
+    getData()
     setEvolution('fire-pokemon-img-1')
     console.log('pokemon>', pokemon)
     console.log('data next gen>.', data)
@@ -33,14 +33,14 @@ const FirePokemon = () => {
  
   const evoTwo = () => {
     pokemon = 'charmeleon'
-    // getData()
+    getData()
     setEvolution('fire-pokemon-img-2')
     console.log('pokemon>', pokemon)
     console.log('data next gen>.', data)
   }
   const evoThree = () => {
     pokemon = 'charizard'
-    // getData()
+    getData()
     setEvolution('fire-pokemon-img-3')
     console.log('pokemon>', pokemon)
     console.log('data next gen>.', data)
@@ -60,9 +60,10 @@ const FirePokemon = () => {
        {data?.data.map(info => {
           return (
             <>
-              <p
+              <p 
                key={info.data}>
                 {info.data}
+                
               </p>
               <p key={info.name}>
                 {info.name}

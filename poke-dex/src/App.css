@@ -1,9 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
 .stats {
     border: 1px solid black;
     width: 90%;
     height: 42%;
     justify-content: center;
     align-items: center;
+    font-family: 'Pokemon Solid', sans-serif;;
+}
+.header {
+    font-family:'Pokemon Solid', sans-serif;;
+    align-items: center;
+    height: 700px;
+    font-size: 70px;
 }
 
 .home-page {

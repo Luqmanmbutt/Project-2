@@ -7,9 +7,12 @@ const HomePage = () => {
 
   return (
     <>
+
+    <div className='card-section'> 
       <FirePokemon />
       <WaterPokemon />
       <GrassPokemon />
+    </div>
     </>
   )
 
