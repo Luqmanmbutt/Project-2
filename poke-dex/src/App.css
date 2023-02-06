@@ -7,11 +7,25 @@
     align-items: center;
     font-family: 'Pokemon Solid', sans-serif;;
 }
+
+.title-container {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    
+}
+
 .header {
     font-family:'Pokemon Solid', sans-serif;;
     align-items: center;
     height: 700px;
     font-size: 70px;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: row;
+
 }
 
 .home-page {
@@ -20,8 +34,7 @@
     object-fit: scale-down;
     border: 2px solid black;
     display: flex;
-    justify-content: space-around;
-    align-items: center;  
+    flex-direction: column;
     background: url("../src/assets/back-ground.png");
     background-repeat: no-repeat;
     background-size: 1629px;
