@@ -43,19 +43,19 @@ const FirePokemon = () => {
     getData()
     setEvolution('fire-pokemon-img-3')
   }
-  
+
   splice()
 
 
   return (
     <div className='card-container'>
-      <div className='buttons'>
-        <button className='pokeball' onClick={evoOne}></button>
-        <button className='greatball' onClick={evoTwo}> </button>
-        <button className='ultraball' onClick={evoThree}></button>
-      </div>
       <div className='card-holder'>
         <div className='pokemon-image'>
+          <div className='buttons'>
+            <button className='pokeball' onClick={evoOne}></button>
+            <button className='greatball' onClick={evoTwo}> </button>
+            <button className='ultraball' onClick={evoThree}></button>
+          </div>
           <div className={evolution}></div>
         </div>
         <div className='pokemon-data'>

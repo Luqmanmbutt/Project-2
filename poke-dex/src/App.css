@@ -41,8 +41,13 @@
 }
 
 .card-container {
-    width: 23%; 
-    
+    width: 23%;
+}
+
+.pokemon-image {
+    display: flex;
+    align-items: center;
+
 }
 
 .fire-pokemon-img-1 {
