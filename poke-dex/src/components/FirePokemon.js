@@ -19,32 +19,32 @@ const FirePokemon = () => {
   useEffect(() => {
 
     getData()
+    
   }, [])
-
-  console.log('data>.', data)
-
+  
+  const splice = () => {
+    data?.data.splice(1)
+  }
+  
   const evoOne = () => {
     pokemon = 'charmander'
     getData()
     setEvolution('fire-pokemon-img-1')
-    console.log('pokemon>', pokemon)
-    console.log('data next gen>.', data)
   }
-
+  
   const evoTwo = () => {
     pokemon = 'charmeleon'
     getData()
     setEvolution('fire-pokemon-img-2')
-    console.log('pokemon>', pokemon)
-    console.log('data next gen>.', data)
   }
+  
   const evoThree = () => {
     pokemon = 'charizard'
     getData()
     setEvolution('fire-pokemon-img-3')
-    console.log('pokemon>', pokemon)
-    console.log('data next gen>.', data)
   }
+  
+  splice()
 
 
   return (
@@ -69,12 +69,7 @@ const FirePokemon = () => {
 
                   </p>
                   <p key={info.name}>
-                    <span>
-                      Name: 
-                    </span>
-                    <span>
                       {info.name}
-                    </span>
                   </p>
                   <p key={info.types}>
                     {info.types.map(i => {
