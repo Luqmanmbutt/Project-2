@@ -50,13 +50,15 @@ const FirePokemon = () => {
   return (
     <div className='card-container'>
       <div className='card-holder'>
-        <div className='pokemon-image'>
+        <div className='pokemon-image1'>
           <div className='buttons'>
             <button className='pokeball' onClick={evoOne}></button>
             <button className='greatball' onClick={evoTwo}> </button>
             <button className='ultraball' onClick={evoThree}></button>
           </div>
-          <div className={evolution}></div>
+          <div className='img-poke'>
+            <div className={evolution}></div>
+          </div>
         </div>
         <div className='pokemon-data'>
           <div className='stats'>

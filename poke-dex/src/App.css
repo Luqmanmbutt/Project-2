@@ -1,22 +1,25 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
 .stats {
     border: 1px solid black;
-    width: 90%;
     height: 42%;
     justify-content: center;
     align-items: center;
-    font-family: 'Pokemon Solid', sans-serif;;
+    font-family: 'Roboto Condensed', sans-serif;
+    ;
 }
 
 .title-container {
     height: 20%;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .header {
-    font-family:'Pokemon Solid', sans-serif;;
+    font-family: 'Pokemon Solid', sans-serif;
+    ;
     align-items: center;
     height: 700px;
     font-size: 70px;
@@ -44,30 +47,50 @@
     width: 23%;
 }
 
-.pokemon-image {
+.buttons {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.pokemon-image1 {
     display: flex;
     align-items: center;
 
 }
 
+.pokemon-image2 {
+    display: flex;
+    align-items: center;
+
+}
+
+.pokemon-image3 {
+    display: flex;
+    align-items: center;
+
+}
+
+
 .fire-pokemon-img-1 {
     width: 90%;
-    height: 200px;
+    height: 160px;
     background: url("../src/assets/charmander.png");
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid black;
-    mix-blend-mode: multiply;
+
 }
+
 .fire-pokemon-img-2 {
     width: 90%;
-    height: 200px;
+    height: 180px;
     background: url("../src/assets/charmeleon.png");
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid black;
-    mix-blend-mode: multiply;
+
 }
+
 .fire-pokemon-img-3 {
     width: 90%;
     height: 200px;
@@ -75,26 +98,28 @@
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid black;
-    mix-blend-mode: multiply;
+
 }
+
 .water-pokemon-img-1 {
     width: 90%;
-    height: 200px;
+    height: 160px;
     background: url("../src/assets/s.png");
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid black;
-    mix-blend-mode: multiply;
+
 }
+
 .water-pokemon-img-2 {
     width: 90%;
-    height: 200px;
+    height: 180px;
     background: url("../src/assets/wt.png");
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid black;
-    mix-blend-mode: multiply;
 }
+
 .water-pokemon-img-3 {
     width: 90%;
     height: 200px;
@@ -102,26 +127,35 @@
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid black;
-    mix-blend-mode: multiply;
 }
+
+.img-poke {
+    height: 250px;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .grass-pokemon-img-1 {
     width: 90%;
-    height: 200px;
+    height: 160px;
     background: url("../src/assets/bulbs.png");
     background-size: contain;
     background-repeat: no-repeat;
-    border: 1px solid black;
-    mix-blend-mode: multiply;
+    border: 1px solid black
 }
+
 .grass-pokemon-img-2 {
     width: 90%;
-    height: 200px;
+    height: 180px;
     background: url("../src/assets/iyvs.png");
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid black;
-    mix-blend-mode: multiply;
 }
+
 .grass-pokemon-img-3 {
     width: 90%;
     height: 200px;
@@ -129,20 +163,20 @@
     background-size: contain;
     background-repeat: no-repeat;
     border: 1px solid black;
-    mix-blend-mode: multiply;
 }
-.pokeball  {
+
+.pokeball {
     height: 85px;
     padding-left: 89.5px;
     padding-right: 19px;
     border: 1px solid #000000;
-    background:url("../src/assets/pokeball.png") no-repeat 10px center;
-    background-size: 85px;
+    background: url("../src/assets/pokeball.png") no-repeat 10px center;
+    background-size: 20px;
     cursor: pointer
-    
 }
+
 .pokeball:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -150,30 +184,37 @@
     padding-left: 89.5px;
     padding-right: 19px;
     border: 1px solid #000000;
-    background:url("../src/assets/pokeball.png") no-repeat 10px center;
-    background-size: 85px;
+    background: url("../src/assets/pokeball.png") no-repeat 10px center;
+    background-size: 25px;
     cursor: pointer
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
     }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
     }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
     }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
     }
-  }
-  .greatball:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.greatball:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -181,39 +222,47 @@
     padding-left: 89.5px;
     padding-right: 19px;
     border: 1px solid #000000;
-    background:url("../src/assets/greatball.png") no-repeat 10px center;
-    background-size: 85px;
+    background: url("../src/assets/greatball.png") no-repeat 10px center;
+    background-size: 35px;
     cursor: pointer
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
     }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
     }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
     }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
     }
-  }
+}
+
 .greatball {
     height: 85px;
     padding-left: 89.5px;
     padding-right: 19px;
     border: 1px solid #000000;
-    background:url("../src/assets/greatball.png") no-repeat 10px center;
-    background-size: 85px;
+    background: url("../src/assets/greatball.png") no-repeat 10px center;
+    background-size: 30px;
     cursor: pointer
 }
+
 .ultraball:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -221,34 +270,41 @@
     padding-left: 89.5px;
     padding-right: 19px;
     /* border: 1px solid #000000; */
-    background:url("../src/assets/ultraball.png") no-repeat 10px center;
-    background-size: 85px;
+    background: url("../src/assets/ultraball.png") no-repeat 10px center;
+    background-size: 45px;
     cursor: pointer
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
     }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
     }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
     }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
     }
-  }
+}
+
 .ultraball {
     height: 85px;
     padding-left: 89.5px;
     padding-right: 19px;
     border: 1px solid #000000;
-    background:url("../src/assets/ultraball.png") no-repeat 10px center;
-    background-size: 85px;
+    background: url("../src/assets/ultraball.png") no-repeat 10px center;
+    background-size: 40px;
     cursor: pointer
 }
