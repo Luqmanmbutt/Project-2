@@ -52,11 +52,12 @@ const FirePokemon = () => {
       <div className='card-holder'>
         <div className='pokemon-image1'>
           <div className='buttons'>
-            <button className='pokeball' onClick={evoOne}></button>
-            <button className='greatball' onClick={evoTwo}> </button>
-            <button className='ultraball' onClick={evoThree}></button>
+            <div className='pokeball' onClick={evoOne}></div>
+            <div className='greatball' onClick={evoTwo}> </div>
+            <div className='ultraball' onClick={evoThree}></div>
           </div>
-          <div className='img-poke'><div>100 p</div>
+          <div className='img-poke'>
+              <div className='hpbar'>HP 100</div>
             <div className='pokemon-type'>
             </div>
             <div className={evolution}></div>

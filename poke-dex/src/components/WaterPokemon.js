@@ -51,9 +51,9 @@ const WaterPokemon = () => {
     <div className='card-holder'>
       <div className='pokemon-image2'>
         <div className='buttons'>
-          <button className='pokeball' onClick={evoOne}></button>
-          <button className='greatball' onClick={evoTwo}> </button>
-          <button className='ultraball' onClick={evoThree}></button>
+          <div className='pokeball' onClick={evoOne}></div>
+          <div className='greatball' onClick={evoTwo}> </div>
+          <div className='ultraball' onClick={evoThree}></div>
         </div>
         <div className='img-poke'>
             <div className={evolution}></div>

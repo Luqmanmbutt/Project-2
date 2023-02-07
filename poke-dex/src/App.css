@@ -19,11 +19,12 @@
 }
 
 .card-holder {
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
     transition: 0.3s;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
-    background-color: #ffd000;
+    background-color: hsl(49, 100%, 50%);
+    border: 10px solid #f0d666;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -92,18 +93,21 @@
 .pokemon-image1 {
     display: flex;
     align-items: center;
+    background-color:  #e8663c;
 
 }
 
 .pokemon-image2 {
     display: flex;
     align-items: center;
+    background-color: #41a7d1;
 
 }
 
 .pokemon-image3 {
     display: flex;
     align-items: center;
+    background-color: #a7c555;
 
 }
 
@@ -118,7 +122,9 @@
 }
 
 .hpbar {
-
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
 }
 
 .fire-pokemon-img-1 {
@@ -189,7 +195,7 @@
 .water-pokemon-img-2 {
     width: 90%;
     height: 180px;
-    background: url("../src/assets/wt.png");
+    background: url("../src/assets/wartor.png");
     background-size: contain;
     background-repeat: no-repeat;
     /* border: 1px solid black; */
