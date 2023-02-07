@@ -18,12 +18,30 @@
 
 }
 
-.card-holder {
+.card-holder1 {
     box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
-    background-color: hsl(49, 100%, 50%);
+    background-color:#FFA07A;
+    border: 10px solid #f0d666;
+}
+
+.card-holder2 {
+    box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    border-radius: 20px;
+    padding: 10px;
+    background-color:#4682B4;
+    border: 10px solid #f0d666;
+}
+
+.card-holder3 {
+    box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    border-radius: 20px;
+    padding: 10px;
+    background-color:#90EE90;
     border: 10px solid #f0d666;
 }
 
@@ -78,22 +96,25 @@
 .buttons {
     display: flex;
     flex-direction: column-reverse;
+    width: 70px;
 }
 
 .img-poke {
-    height: 250px;
-    width: 100%;
+    height: 275px;
+    width: 65%;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
 }
 
 .pokemon-image1 {
     display: flex;
     align-items: center;
     background-color:  #e8663c;
+    border-radius: 5px;
+    border: 8px solid #979393;
+    box-shadow: 0 7px 8px 0 rgb(0, 0, 0);
+    transition: 0.3s;
 
 }
 
@@ -101,30 +122,67 @@
     display: flex;
     align-items: center;
     background-color: #41a7d1;
-
+    border-radius: 5px;
+    border: 8px solid #979393;
+    box-shadow: 0 7px 8px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    
 }
 
 .pokemon-image3 {
     display: flex;
     align-items: center;
     background-color: #a7c555;
-
+    border-radius: 5px;
+    border: 8px solid #979393;
+    box-shadow: 0 7px 8px 0 rgb(0, 0, 0);
+    transition: 0.3s;
 }
 
-.pokemon-type {
+.pokemon-type1 {
     background: url("../src/assets/firetype.png");
-    height: 40px;
-    width: 40px;
-    background-size: 30px;
+    height: 80px;
+    width: 185px;
+    background-size: 25px;
     background-repeat: no-repeat;
-    margin-left: 193px;
-    
+    margin-left: 211px;
 }
 
-.hpbar {
+.pokemon-type2 {
+    background: url("../src/assets/watertype.png");
+    height: 80px;
+    width: 185px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    margin-left: 211px;
+}
+
+.pokemon-type3 {
+    background: url("../src/assets/grasstype.png");
+    height: 80px;
+    width: 185px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    margin-left: 211px;
+}
+
+.hpbar1 {
     display: flex;
     justify-content: center;
     font-weight: bold;
+    width: 420px;
+}
+.hpbar2 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    width: 420px;
+}
+.hpbar3 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    width: 420px;
 }
 
 .fire-pokemon-img-1 {
@@ -138,6 +196,10 @@
     animation-iteration-count : infinite;
     animation-direction : alternate;
     animation-duration : 1s;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-top: -50px;
+
 }
     @keyframes mymove {
         from {transform: translateY(0px);}
@@ -154,6 +216,10 @@
     animation-iteration-count : infinite;
     animation-direction : alternate;
     animation-duration : 1s;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: -25px;
+
 }
     @keyframes mymove {
         from {transform: translateY(0px);}
@@ -170,6 +236,10 @@
     animation-iteration-count : infinite;
     animation-direction : alternate;
     animation-duration : 1s;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-top: -55px;
+
 }
     @keyframes mymove {
         from {transform: translateY(0px);}
@@ -187,6 +257,9 @@
     animation-iteration-count : infinite;
     animation-direction : alternate;
     animation-duration : 1s;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-top: -50px;
 }
     @keyframes mymove {
         from {transform: translateY(0px);}
@@ -203,6 +276,9 @@
     animation-iteration-count : infinite;
     animation-direction : alternate;
     animation-duration : 1s;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: -44px;
 }
     @keyframes mymove {
         from {transform: translateY(0px);}
@@ -219,6 +295,9 @@
     animation-iteration-count : infinite;
     animation-direction : alternate;
     animation-duration : 1s;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-top: -44px;
 }
     @keyframes mymove {
         from {transform: translateY(0px);}
@@ -235,6 +314,9 @@
     animation-iteration-count : infinite;
     animation-direction : alternate;
     animation-duration : 1s;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: -60px;
 }
     @keyframes mymove {
         from {transform: translateY(0px);}
@@ -251,6 +333,9 @@
     animation-iteration-count : infinite;
     animation-direction : alternate;
     animation-duration : 1s;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: -44px;
 }
     @keyframes mymove {
         from {transform: translateY(0px);}
@@ -267,6 +352,9 @@
     animation-iteration-count : infinite;
     animation-direction : alternate;
     animation-duration : 1s;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: -44px;
 }
     @keyframes mymove {
         from {transform: translateY(0px);}

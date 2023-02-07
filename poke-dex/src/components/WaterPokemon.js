@@ -48,7 +48,7 @@ const WaterPokemon = () => {
 
  return (
   <div className='card-container2'>
-    <div className='card-holder'>
+    <div className='card-holder2'>
       <div className='pokemon-image2'>
         <div className='buttons'>
           <div className='pokeball' onClick={evoOne}></div>
@@ -56,6 +56,9 @@ const WaterPokemon = () => {
           <div className='ultraball' onClick={evoThree}></div>
         </div>
         <div className='img-poke'>
+              <div className='hpbar1'>HP 100</div>
+            <div className='pokemon-type2'>
+            </div>
             <div className={evolution}></div>
           </div>
       </div>
