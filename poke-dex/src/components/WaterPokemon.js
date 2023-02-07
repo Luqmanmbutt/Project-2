@@ -47,7 +47,7 @@ const WaterPokemon = () => {
  splice()
 
  return (
-  <div className='card-container'>
+  <div className='card-container2'>
     <div className='card-holder'>
       <div className='pokemon-image2'>
         <div className='buttons'>

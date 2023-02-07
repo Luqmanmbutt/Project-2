@@ -52,7 +52,7 @@ const GrassPokemon = () => {
  splice()
 
  return (
-  <div className='card-container'>
+  <div className='card-container3'>
     <div className='card-holder'>
       <div className='pokemon-image3'>
         <div className='buttons'>
